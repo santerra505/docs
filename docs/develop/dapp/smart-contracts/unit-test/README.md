@@ -35,7 +35,7 @@ along with its description, is shown below:
 
 This tutorial assumes that the prerequisites defined in [the `cw-template` README](https://github.com/InterWasm/cw-template#cosmwasm-starter-pack) have been met. In addition, this tutorial requires the following:
 
-> Installing Rust and `cargo` using `rustup`
+> **Installing Rust and `cargo` using `rustup`**
 >
 > Using `rustup` is easiest way to install the latest versions of 
 > `cargo ` and Rust. For more information, see [Cargo docs](https://doc.rust-lang.org/cargo/getting-started/installation.html).
