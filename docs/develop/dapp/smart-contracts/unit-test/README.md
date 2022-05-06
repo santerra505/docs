@@ -15,8 +15,8 @@ in the Cosmos ecosystem.
 In this tutorial, the following changes are made to `cw-template`:
 
 1. The ***Counter*** smart contract, which is defined in the `src` directory, is modified.
-2. Addtional functions are added to `helper.rs`.
-3. A subdirectory `tests` is created for 
+2. Additional functions are added to `helper.rs`.
+3. A `tests` directory is created for test-related code.
 4. Mock testing data modules are created and added to `tests`.
 5. Unit tests are created and added to `tests`.
 
@@ -37,8 +37,8 @@ This tutorial assumes that the prerequisites defined in [the `cw-template` READM
 
 > **Installing Rust and `cargo` using `rustup`**
 >
-> Using `rustup` is easiest way to install the latest versions of 
-> `cargo ` and Rust. For more information, see [Cargo docs](https://doc.rust-lang.org/cargo/getting-started/installation.html).
+> Using `rustup` is the easiest way to install the latest versions of 
+> `cargo ` and Rust. For more information, see the [Cargo docs](https://doc.rust-lang.org/cargo/getting-started/installation.html).
 
 - A code editor or IDE
 - A command line application
@@ -48,8 +48,7 @@ This tutorial assumes that the prerequisites defined in [the `cw-template` READM
 
 # Getting Started
 
-To get started,
-complete each section listed below:
+To get started, complete each section in the order listed below:
 
  ```{toctree}
  :maxdepth: 2
