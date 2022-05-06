@@ -31,6 +31,14 @@ along with its description, is shown below:
 | mod.rs         | Defines entry points for the tests          |
 | query_mocks.rs | Mocked `QueryMsg` data                      |
 
+Each unit test is structured using the [Given-When-Then](https://en.wikipedia.org/wiki/Given-When-Then) testing framework. The framework defines a simple, robust way to structure unit tests that can indicate when helper functions are needed. Each clause is defined below:
+
+- GIVEN: The initial state and preconditions defined prior to the test.
+
+- WHEN: Actions taken by the user during the test.
+
+- THEN: Assertions that the actions defined in the WHEN clause executed as expected.
+
 ## Prerequisites
 
 This tutorial assumes that the prerequisites defined in [the `cw-template` README](https://github.com/InterWasm/cw-template#cosmwasm-starter-pack) have been met. In addition, this tutorial requires the following:
