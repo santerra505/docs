@@ -1,4 +1,4 @@
-# 1 Modify the ***Counter*** Contract
+# 1. Modify the ***Counter*** Contract
 
 The `src` file defines a ***Counter*** smart contract with the following modules:
 
