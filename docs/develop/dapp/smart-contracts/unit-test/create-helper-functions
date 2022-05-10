@@ -1,4 +1,4 @@
-## 3. Create the helper functions
+# 2. Create the helper functions
 
 In this section, helper functions are created in `helper.rs`. Each helper function is structured using the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) to minimize complexity and code duplication. The following helper functions are created:
 
@@ -8,7 +8,7 @@ In this section, helper functions are created in `helper.rs`. Each helper functi
 
 To begin, create the  `instantiate_default` helper function.
 
-### 3.1 Create `instantiate_default`
+## 1. Create `instantiate_default`
 
 The `instantiate_default` helper function instantiates the contract with `count` set to `25` and `owner` set to `creator`. This helper function returns the contract dependencies, the message that was sent to instantiate the contract, and the response from instantiate method.
 
@@ -44,7 +44,7 @@ let res = instantiate(deps.as_mut(), mock_env(), info.clone(), msg).unwrap();
 ```
 Next, create the  `instantiate_with_custom_querier` helper function.
 
-### 3.2 Create the `instantiate_with_custom_querier` 
+## 2 Create the `instantiate_with_custom_querier` 
 
 The `instantiate_with_custom_querier` helper function will instantiate the contract with `count` set to `25` and `owner` set to `creator`. However, unlike `instantiate_default`, this function returns the contract dependencies with MockQuerier used to mock the requests to QueryMsg, along with the message that was send to instantiate the contract and the response from instantiate method.
 
@@ -80,7 +80,7 @@ let res = instantiate(deps.as_mut(), mock_env(), info.clone(), msg).unwrap();
 
 Next, create the `custom_mock_dependencies` function.
 
-### 3.3 Create `custom_mock_dependencies` 
+## 3. Create `custom_mock_dependencies` 
 
 The `custom_mock_dependencies` helper function is a private function that injects mocked data into `custom_query_msg`. Mocked data can be found in a different files depending on the complexity of the smart contract. The helped function returns contract dependencies with `custom_mocked_data`.
 
