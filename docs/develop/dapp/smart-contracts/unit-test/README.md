@@ -62,6 +62,6 @@ To get started, complete each section in the order listed below:
  :maxdepth: 2
  modify-counter-contract
  create-helper-functions
- create-mock-testing data
+ create-mock-testing-data
  create-unit-tests
  ```
