@@ -20,8 +20,7 @@ In this tutorial, the following changes are made to `cw-template`:
 4. Mock testing data modules are created and added to `tests`.
 5. Unit tests are created and added to `tests`.
 
-In addition, a `test` subdirectory  is created to contain code for 
-all unit testing capabilities. Each module or directory contained in `test`,
+Each module or directory contained in `tests`,
 along with its description, is shown below:
 
 | Module         | Module description                          |
