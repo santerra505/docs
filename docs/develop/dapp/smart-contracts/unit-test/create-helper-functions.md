@@ -12,7 +12,7 @@ To begin, create the  `instantiate_default` helper function.
 
 The `instantiate_default` helper function instantiates the contract with `count` set to `25` and `owner` set to `creator`. This helper function returns the contract dependencies, the message that was sent to instantiate the contract, and the response from instantiate method.
 
-1. Open  `helpers.rs` in a text editor.
+1. Open  `helpers.rs`.
 2. Copy and paste the `instantiate_default` code below into `helpers.rs`. 
 
 ```Rust
