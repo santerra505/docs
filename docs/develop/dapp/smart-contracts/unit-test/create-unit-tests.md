@@ -13,12 +13,13 @@ depending on complexity of the contract.
 
 ### 5.0 Unit test creation prerequisites
 
-1. Navigate to 'tests'.
-2. Create a module named `mod.rs`
+1. In the `cw-template` fork, create a directory called `tests`.
+2. Navigate to `tests`.
+3. Create a module named `mod.rs`
 
  ### 5.1 Create the `proper_initialization` test
 
-The test validates that `instantiate_default()` returns the expected values. 
+The `proper_initialization` test validates that `instantiate_default()` returns the expected values. 
 This test is useful for identifying initialization errors. 
 For example, modifying data inside `instantiate_default() `can break tests.
 To create the test, do the following:
@@ -80,7 +81,7 @@ info
 
  ### 5.2 Create the `reset_with_custom_mocked_env` test
 
-The test validates that block time is stored correctly 
+The `reset_with_custom_mocked_env` test validates that the block time is stored correctly 
 within `custom_mocked_env()`once `ExecuteMsg:Reset` is executed.
 To create the test, do the following:
 
@@ -125,17 +126,15 @@ The `query_mocked_last_reset_time` test is designed to
 help understand how a `CustomQuerier` can be configured in order to bypass previous steps. 
 In this test, there is no call to `Reset`. 
 However, the `GetLastResetTime` query does not return `None`, 
-because a mock is configured to always return the values 
+because mock data is configured to always return the values 
 from the method `query_mocks::custom_query_msg(...)`.
 To create this test, do the following:
 
 
 1. Open `mod.rs`.
 2. Copy and paste the `reset_with_custom_mocked_env` code below into `mod.rs`:   
-3. 
 
   
-
 ```Rust
 
 #[test]
