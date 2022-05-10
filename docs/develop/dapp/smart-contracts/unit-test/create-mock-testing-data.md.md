@@ -5,7 +5,7 @@ In this section, mock data for testing is created. Each mock data module is desc
 - The `env_mocks.rs` module contains mock contract and block data.
 - The `query_mocks` module contains mock incoming query request.
 
-### 4.1 Create `env_mocks.rs`
+## 1 Create `env_mocks.rs`
 
 The `env_mocks.rs` module contains mock contract and block data. This allows for testing of functionalities that depend on the block height, time or address. 
 To create `env_mocks.rs`, complete the following steps:
@@ -43,7 +43,7 @@ address: Addr::unchecked("counter_contract"),
 ```
 Next, create `query_mocks.rs`.
 
-### 4.2 Create `query_mocks.rs`
+## 2 Create `query_mocks.rs`
 
 The `query_mocks.rs` module contains mock incoming query requests. 
 This can be useful when two smart contracts are chained and only one contract needs to be tested or when validating a case that is created by multiple steps.
